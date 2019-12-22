@@ -19,6 +19,9 @@
     border-top: 10px solid teal;
     background-color:#666666;
 }
+#navbarDropdown{
+    float: right;
+}
 body{
     background-image: url("../Images/prism.png");
     margin: 0 auto;
@@ -40,11 +43,11 @@ body{
     margin: 30px auto;
     background-color:#ffffff;
 }
-img{
+#profImg{
     position: relative;
     float: left;
     /*top: 10px;*/
-    left: 30px;
+    left: 0px;
     z-index: 2;
     margin-right: 40px;
 }
@@ -131,4 +134,23 @@ input{
     width: 100px;
     position: relative;
     bottom: 30px;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 760px){
+    #AboutMe{
+        widows: 100vw;
+    }
+    #profImg{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        z-index: 4;
+        border: 10px black;
+    }
+    #bio{
+        display: block;
+    }
+    
 }
